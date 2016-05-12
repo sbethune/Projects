@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[MOVIE]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(255) NULL, 
+    [Year] INT NULL
+)

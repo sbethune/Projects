@@ -1,0 +1,5 @@
+C:\Source\Projects\SAMPLES\SQLScreen1\SQLScreen1\bin\Debug\SQLScreen1.dacpac
+C:\Source\Projects\SAMPLES\SQLScreen1\SQLScreen1\bin\Debug\SQLScreen1.dll
+C:\Source\Projects\SAMPLES\SQLScreen1\SQLScreen1\bin\Debug\SQLScreen1.pdb
+C:\Source\Projects\SAMPLES\SQLScreen1\SQLScreen1\obj\Debug\SQLScreen1.dll
+C:\Source\Projects\SAMPLES\SQLScreen1\SQLScreen1\obj\Debug\SQLScreen1.pdb

@@ -1,0 +1,50 @@
+﻿
+/* CREATE TABLE Script for Screening Model */
+
+--1 ACTOR
+CREATE TABLE [dbo].[ACTOR]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Fname] NVARCHAR(80) NULL, 
+    [Lname] NVARCHAR(80) NULL, 
+    [Gender] NCHAR(1) NULL
+)
+GO
+
+--2 MOVIE
+CREATE TABLE [dbo].[MOVIE]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(255) NULL, 
+    [Year] INT NULL
+)
+GO
+
+--3 DIRECTOR
+CREATE TABLE [dbo].[DIRECTOR]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [FName] NVARCHAR(80) NULL, 
+    [LName] NVARCHAR(80) NULL
+)
+GO
+
+--4 CAST
+CREATE TABLE [dbo].[CAST]
+(
+	[Actor_Id] INT NOT NULL,
+	[Movie_Id] INT NOT NULL,
+	[Role] NVARCHAR(255)
+)
+GO
+
+--5 MOVIE_DIRECTOR   FIXME: Convert to CAST.ROLE
+CREATE TABLE [dbo].[MOVIE_DIRECTOR]
+(
+	[Director_Id] INT NOT NULL, 
+    [Movie_Id] INT NOT NULL, 
+    CONSTRAINT [PK_MOVIE_DIRECTOR] PRIMARY KEY ([Director_Id], [Movie_Id])
+)
+GO
+
+-- EOF

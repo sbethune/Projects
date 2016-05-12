@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[DIRECTOR]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [FName] NVARCHAR(80) NULL, 
+    [LName] NVARCHAR(80) NULL
+)
